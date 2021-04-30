@@ -3,13 +3,22 @@
 <head>
     {{> head }}
 </head>
-<body>
+<body class="show-sidebar">
 
-    {{> header }}
+    <div class="page">
+      {{> header }}
 
-    {{> body }}
+      {{> sidebar }}
 
-    {{> footer }}
+      <main class="main">
+        <div class="container">
+          {{> body }}
+        </div>
+        
+      </main>
+    </div>
+
+    {{> story-modal }}
 
     <script src="assets/js/app.js"></script>
 </body>
